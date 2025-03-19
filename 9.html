@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing:border-box;
+        }
+        .head{
+            color:rgb(45,45,45);
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size:40px;
+            text-align:center;
+            margin-top:2rem;
+            padding:1rem;
+           
+        }
+        .container{
+            object-fit: cover;
+            overflow-x:hidden;
+            gap: 20px;
+            display:grid;
+            justify-content:center;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding-top:15px;
+            padding-left:200px;
+            padding-right:200px;
+        }
+
+        .allimage{
+            
+            position:relative;
+            height:385px;
+            width:370px;
+            border-radius: 15px;
+            filter:grayscale(100%) ;
+        }
+        .allimage:hover{
+            filter:grayscale(0%);
+            transform:translateZ(2rem) scale(1.009);
+            transition:0.5s;
+            box-shadow: 3px 6px 20px rgb(45,45,45);
+            
+        }
+        .card{  
+            position:absolute; 
+            transform:translate(2rem,-3rem); 
+            font-size:20px;  color:white;
+        }
+        .allimage figcaption{
+            position:relative;
+            opacity:0;
+        }
+        .allimage:hover figcaption{
+        /*    transform:translateZ(2rem) scale(1.04);
+            transform:translateY(-4rem); */
+            transition:0.5s;
+            opacity:1;   }
+
+            
+    </style>
+</head>
+<body>
+
+    <h2 class="head">My Gallery</h2> 
+    <div class="container">
+      <figure class="allimage">  <img src="https://codehelp-image-gallery.netlify.app/images/image1.jpg" class="allimage"> <figcaption class="card"> Image1</figcaption>     </figure>
+     <figure class="allimage">   <img src="https://codehelp-image-gallery.netlify.app/images/image2.jpg" class="allimage">  <figcaption class="card"> Image2 </figcaption>    </figure>
+     <figure class="allimage">   <img src="https://codehelp-image-gallery.netlify.app/images/image3.jpg" class="allimage">  <figcaption class="card"> Image3  </figcaption>    </figure>
+     <figure class="allimage">   <img src="https://codehelp-image-gallery.netlify.app/images/image4.jpg" class="allimage">   <figcaption class="card"> Image4 </figcaption>   </figure> 
+     <figure class="allimage">   <img src="https://codehelp-image-gallery.netlify.app/images/image5.jpg" class="allimage">    <figcaption class="card"> Image5 </figcaption>    </figure>
+     <figure class="allimage">   <img src="https://codehelp-image-gallery.netlify.app/images/image6.jpg" class="allimage">   <figcaption class="card"> Image6 </figcaption>     </figure>
+     <figure class="allimage">   <img src="https://codehelp-image-gallery.netlify.app/images/image7.jpg" class="allimage">   <figcaption class="card"> Image7 </figcaption>     </figure>
+    <figure class="allimage">    <img src="https://codehelp-image-gallery.netlify.app/images/image8.jpg" class="allimage">   <figcaption class="card"> Image8 </figcaption>     </figure>
+    <figure class="allimage">    <img src="https://codehelp-image-gallery.netlify.app/images/image9.jpg" class="allimage">    <figcaption class="card"> Image9 </figcaption>     </figure>
+    <figure class="allimage">    <img src="https://codehelp-image-gallery.netlify.app/images/image10.jpg" class="allimage">   <figcaption class="card"> Image10 </figcaption>     </figure>
+    <figure class="allimage">    <img src="https://codehelp-image-gallery.netlify.app/images/image11.jpg" class="allimage">   <figcaption class="card"> Image11  </figcaption>     </figure>
+    <figure class="allimage">    <img src="https://codehelp-image-gallery.netlify.app/images/image12.jpg" class="allimage">   <figcaption class="card"> Image12  </figcaption>     </figure>
+    <figure class="allimage">    <img src="https://codehelp-image-gallery.netlify.app/images/image13.jpg" class="allimage">   <figcaption class="card"> Image13 </figcaption>      </figure>  
+   <figure class="allimage">     <img src="https://codehelp-image-gallery.netlify.app/images/image14.jpg" class="allimage">   <figcaption class="card"> Image14  </figcaption>     </figure>
+   <figure class="allimage">     <img src="https://codehelp-image-gallery.netlify.app/images/image15.jpg" class="allimage">   <figcaption class="card"> Image15  </figcaption>       </figure>
+    </div >
+  
+</body>
+</html>
